@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoX T4 Token Swap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Swap NeoX T4 Tokens</h1>
+
+    <form id="swapForm">
+      <label for="fromToken">From:</label>
+      <select id="fromToken" name="fromToken">
+        <option value="neox">NeoX T4</option>
+        <option value="usdt">USDT</option>
+      </select>
+
+      <label for="toToken">To:</label>
+      <select id="toToken" name="toToken">
+        <option value="usdt">USDT</option>
+        <option value="neox">NeoX T4</option>
+      </select>
+
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" min="0.01" step="0.01" required>
+
+      <button type="submit">Swap</button>
+    </form>
+
+    <p id="swapResult"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
