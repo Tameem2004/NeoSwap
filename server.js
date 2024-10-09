@@ -8,6 +8,8 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
+const web3 = new Web3('https://neox-t4-testnet.rpc-url'); // Replace with actual NeoX T4 testnet RPC URL
+
 // Swap logic
 app.post('/swap', (req, res) => {
   const { fromToken, toToken, amount } = req.body;
